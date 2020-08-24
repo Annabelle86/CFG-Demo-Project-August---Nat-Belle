@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Where in the world?</title>
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="game.css">
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div id="game" class="justify-center flex-column">
+                <div id="hud">
+                    <div class="hud-item">
+                        <p id="progressText" class="hud-prefix">
+                            Question
+                        </p>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
+                    </div>
+                       <div class="hud-item">
+                           <p class="hud-prefix">
+                             Score  
+                           </p>
+                           <h1 class="hud-main-text" id="score">
+                               0
+                           </h1>
+                       </div>
+                </div>
+                <h1 id="question">Where is this beach scene?</h1>
+                <div class="choice-container">
+                    <p class="choice-prefix">A.</dpv>
+                    <p class="choice-text" data-number="1">Venezuela</p>       
+                </div>   
+                <div class="choice-container">
+                    <p class="choice-prefix">B.</dpv>
+                    <p class="choice-text" data-number="2">New Zealand</p>       
+                </div>   
+        </div>
+        <script type="text/javascript" src="game.js"></script>
+    </body>
+</html>

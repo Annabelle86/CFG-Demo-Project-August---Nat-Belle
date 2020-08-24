@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Where in the world?</title>
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"></script>
+        <link rel="stylesheet" href="game.css"></script>
+        <script src="https://kit.fontawesome.com/c7e3840e50.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div id="end" class="flex-center flex-column">
+
+                <!--I can't for the life of me get this 0 to follow the css!! it's located in the game.css-->
+                <h1 id="finalScore">0</h1>
+
+                    <form class="end-form-container">
+                        <h2 id="end-text">Enter your name below to save your score!</h2>
+                        <input type="text" name="name" id="username" placeholder="Enter your name">
+                        <button class="btn" id="saveScoreBtn" type="submit" onClick="saveHighScore(event)" enable>Save</button>
+                    </form>
+                    
+                        <a href="game.html" class="btn">Play Again</a>
+                        <a href="index.html" class="btn">Home<i class="fas fa-home"></i></a>
+            </div>
+        </div>
+        <script type="text/javascript" src="end.js"></script>
+    </body>
+</html>

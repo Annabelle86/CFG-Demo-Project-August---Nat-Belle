@@ -1,0 +1,257 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 100px;
+    background-color:#f4f4f4;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav{
+    position: relative;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 0;
+    padding: 0;
+}
+
+nav ul{
+    position: absolute;
+    bottom: 30px;
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+    padding: 15px;
+}
+
+h1{
+    text-align: justify;
+    justify-content: center;
+    font-size: 60px;
+    font-display: bold;
+    color:rgba(0,0,0, 0.4);
+    padding: 0;
+    margin-bottom: 5rem;
+    font-family: 'Parisienne', cursive;
+    font-weight: 200;
+}
+
+h2 {
+    font-size:50px;
+    margin-bottom: 4rem;
+}
+
+.welcome{
+    text-align: center;
+    justify-content: justify;
+    color:rgba(0,0,0, 0.4);
+    margin-top: 0;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    font-size: 20px;
+}
+
+p{
+    line-height: 25px;
+    text-align: justify;
+}
+
+/*I'm so sorry, I had to start again and could not include the big image again!*/
+.Background-image{
+    background-image: url("/img/widebeachimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+}
+
+h1 .text-over-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact {
+    padding: 20px;
+}
+    
+.contact label{
+        display:block;
+}
+    
+.contact.form-group{
+        padding-bottom: 15px;
+}
+    
+.contact input[type="text"], .contact textarea{
+        padding:8px;
+        width: 100%;
+}
+    
+.contact input[type="email"], .contact textarea{
+        padding:8px;
+        width: 100%;
+}
+    
+.container{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0;
+    padding: 2rem;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction: column;
+}
+
+.flex.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn{
+    font-size:2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color:rgba(0,0,0, 0.4);
+    background: rgb(176, 240, 240);
+    border-radius: 4px;
+}
+
+.btnContact{
+    font-size:1.5rem;
+    padding: 1rem 0;
+    width: 6rem;
+    height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color:rgba(0,0,0, 0.4);
+    background: rgb(176, 240, 240);
+    border-radius: 4px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0,0,0, 0.4);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform:none;
+}
+
+#highscore-btn{
+     background: rgb(176, 240, 240);
+}
+
+#highscore-btn:hoover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0,0,0, 0.4);
+}
+
+.fa-crown {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 25px;
+}
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*End Page CSS*/
+
+.end-form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(0,0,0, 0.4);
+}
+
+input::placeholder{
+    color: rgba(0,0,0, 0.4);
+}
+
+#username{
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size:2.4 rem;
+    color:rgba(0,0,0, 0.4);
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+    font-weight: 200;
+}
+
+#saveScoreBtn{
+    border: none;
+}
+.social {
+    padding: 15px;
+}
+
+.location-map {
+    text-align: right;
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    padding-left: 20rem;
+
+}
